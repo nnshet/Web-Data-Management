@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Student Name: Shet,Neha Nilcant and Project Name: Project#1  and Due date: Wednesday October 19 -->
+<html lang="en">
+  <head>
+    <title>A Weather Web Application</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="weather.js"></script>
+      <style>
+         
+          #output h2 {
+              
+              color:pink
+          }
+          table {
+              margin: 0 auto;
+              background-color:moccasin;
+          }
+          table, tr, td {
+            border: 2px solid #6f5d46;
+            border-collapse: collapse;
+              
+          }
+          tr, td {
+            padding: 14px;
+          }
+           table tr:nth-child(odd) {
+            background-color: #f1f1c1;
+          }
+          .textContent {
+              
+              text-align: center;
+              color:azure;
+          }
+          body {
+              background-image:url('clouds.jpg')
+          }
+      </style>
+  </head>
+  <body onload="">
+          <div class='textContent'><h2> A Weather Web Application</h2></div>
+      <div class="textContent">
+        <form>
+           <label>City: <input type="text" id="form-input"/></label>
+           <input type="button" onclick="sendRequest();" value="Display Info"/>
+        </form>
+      </div>
+        <div id="output">&nbsp;</div>
+  </body>
+</html>
